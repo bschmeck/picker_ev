@@ -1,0 +1,11 @@
+div {
+    float: left;
+}
+
+#form_div {
+    margin: 10 0 0 25;
+}
+
+#results_div {
+    margin: 10 0 0 50;
+}

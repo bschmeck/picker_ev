@@ -1,27 +1,10 @@
 <html>
   <head>
     <script type="text/javascript" src="ev.js"></script>
-    <script type="text/javascript">
-      var calc = function() {
-        var number = parseInt(document.getElementById("number").value);
-        if (isNaN(number)) {
-          alert("Illegal value for Round Number");
-          return;
-        }
-        var people = parseInt(document.getElementById("people").value);
-        if (isNaN(people)) {
-          alert("Illegal value for Number of People");
-          return;
-        }
-        var picked = true;
-
-        var round = new Round(number, people, picked);
-        console.log("Double Down: " + round.doubleDownEv());
-        console.log("Monahan    : " + round.monahanEv());
-      }
-    </script>
+    <script type="text/javascript" src="page.js"></script>
   </head>
   <body>
+    <div>
     <form>
       <label for="number">Round Number</label>
       <input type="text" id="number" value="0"/><br/>

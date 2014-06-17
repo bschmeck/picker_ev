@@ -26,7 +26,7 @@ Round.prototype.prWinning = function() {
 
 Round.prototype.currentRoundEv = function() {
     if (this.people == 1)
-        ret = 1;
+        return 1;
     else if (this.isPressing())
         return this.prLosing() * this.risk();
     else

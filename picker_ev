@@ -4,13 +4,19 @@
     <script type="text/javascript" src="page.js"></script>
   </head>
   <body>
-    <div>
-    <form>
-      <label for="number">Round Number</label>
-      <input type="text" id="number" value="0"/><br/>
-      <label for="people">Number of People</label>
-      <input type="text" id="people"/><br/>
-      <input type="submit" value="Calculate" onClick="calc();  return false;"/>
-    </form>
+    <div id="form_div">
+      <form>
+        <label for="number">Round Number</label>
+        <input type="text" id="number" value="0"/><br/>
+        <label for="people">Number of People</label>
+        <input type="text" id="people"/><br/>
+        <input type="submit" value="Calculate" onClick="calc();  return false;"/>
+      </form>
+    </div>
+
+    <div id="results_div">
+      <h2>Double Down Press EV: <span id="double_down_ev"></span></h2>
+      <h2>Monahan Press EV: <span id="monahan_ev"></span></h2>
+    </div>
   </body>
 </html>

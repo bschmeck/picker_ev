@@ -12,6 +12,10 @@ var calc = function() {
     var picked = true;
 
     var round = new Round(number, people, picked);
-    console.log("Double Down: " + round.doubleDownEv());
-    console.log("Monahan    : " + round.monahanEv());
+    showResults(round);
+}
+
+var showResults = function(round) {
+    document.getElementById("double_down_ev").innerText = round.doubleDownEv().toFixed(4) + " days";
+    document.getElementById("monahan_ev").innerText = round.monahanEv().toFixed(4) + " days";
 }
